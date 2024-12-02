@@ -62,10 +62,17 @@ let n = 18;
 
 console.log(m-n)
 
+
 // Problem 11
 
-if (grade=5) { 
-    onts
-}
+let q=100
+console.log(6*q)
+
+
+//  Problem 12 
+
+if (85) {89>A, 79>B, 69>C, 59>D } 
+
+// if bolon davtalt uzeh mon bodlogoo duusgah
 
 
