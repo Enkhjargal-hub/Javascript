@@ -69,10 +69,40 @@ let q=100
 console.log(6*q)
 
 
-//  Problem 12 
+// Problem 12 (3 toonii ih)
 
-if (85) {89>A, 79>B, 69>C, 59>D } 
+let too1=56;
+let too2=89;
+let too3=8;
 
-// if bolon davtalt uzeh mon bodlogoo duusgah
+if (too1>too2) {
+    if (too1>too3) {
+        console.log(too1, "ih too");
+    } else {
+        console.log(too3,"ih");
+    }
+} else{
+    if(too2>too3)
+        console.log(too2, "ih too");
+        else{
+            console.log(too3, "ih");
+            
+        }
+    }
+    
+
+//  Problem 13 
+
+let w=3
+let p=6
+let y=2
+let u=8
+
+
+
+
+
+
+
 
 
