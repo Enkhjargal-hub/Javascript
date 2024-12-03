@@ -69,11 +69,11 @@ let q=100
 console.log(6*q)
 
 
-// Problem 12 (3 toonii ih)
+// Problem 12 (3 toonii hamgiin ih)
 
 let too1=56;
 let too2=89;
-let too3=8;
+let too3=15;
 
 if (too1>too2) {
     if (too1>too3) {
@@ -89,20 +89,59 @@ if (too1>too2) {
             
         }
     }
-    
-
-//  Problem 13 
-
-let w=3
-let p=6
-let y=2
-let u=8
 
 
+//  Problem 13 (4 toonii 5-s ih toonuudiin urjver)
+
+let w=3;
+let p=6;
+let y=2;
+let u=8;
+
+let urjver;
+
+if(w<5) w=1
+if(p<5) p=1
+if(y<5) y=1
+if(u<5) u=1
+
+console.log(w*p*y*u);
+
+// Problem 14 (4 toonii hamgiin baga olno)
+
+let d=66;
+let t=48;
+let nm=15;
+let hh=43;
 
 
+if(d<t) {
+    if(d<t);
+    if(d<nm);
+    if(d<hh);
+    if(t<d);
+    if(t<nm);
+    if(t<hh);
+    if(nm<d);
+    if(nm<t);
+    if(nm<hh);
+    }
+console.log(nm, "baga too");
 
 
+// Problem 15 (80-s ih toonii niilber olno)
 
+let ll=85;
+let sd=75;
+let uu=96;
+let rt=69;
+
+if(ll>80) ll=0;
+if(sd>80) sd=0;
+if(uu>80) uu=0;
+if(rt>80) rt=0;
+
+   console.log(ll+sd+uu+rt);
+   
 
 
