@@ -166,6 +166,12 @@ let kk=5;
 let we=2;
 let op=3;
 
-if(kk%2 ==1){
-    
-}
+if(kk%2 ==1) kk;
+if(we%2 ==1) we=0;
+if(op%2 ==1) op;
+
+console.log(kk*we*op);
+
+
+
+
