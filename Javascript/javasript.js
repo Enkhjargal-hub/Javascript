@@ -166,3 +166,6 @@ let kk=5;
 let we=2;
 let op=3;
 
+if(kk%2 ==1){
+    
+}
