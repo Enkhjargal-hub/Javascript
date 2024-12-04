@@ -146,32 +146,49 @@ let ts = 8;
 let ans = 0;
 
 if (gg == 8) {
-  ans = ans + 1;}
+  ans = ans + 1;
+}
 
 if (yu == 8) {
-    ans = ans + 1;}
+  ans = ans + 1;
+}
 
 if (io == 8) {
-    ans = ans + 1;}
+  ans = ans + 1;
+}
 
 if (ts == 8) {
-    ans = ans + 1;}
+  ans = ans + 1;
+}
 
 console.log(ans);
 
-
 // Problem 17 (sondgoi toonuudiin urjver)
 
-let kk=5;
-let we=2;
-let op=3;
+let kk = 5;
+let we = 2;
+let op = 3;
 
-if(kk%2 ==1) kk;
-if(we%2 ==1) we=0;
-if(op%2 ==1) op;
+let answer = 1;
 
-console.log(kk*we*op);
+if (kk % 2 == 1) answer = answer * kk;
+if (we % 2 == 1) answer = answer * we;
+if (op % 2 == 1) answer = answer * op;
 
+console.log("answer = ", answer);
 
+// Problem 18 (11-t huvaagddaggui toonii niilber)
 
+let as = 8;
+let ui = 11;
+let ty = 22;
+let jk = 5;
 
+let jo=1;
+
+if (as % 11 !== 0) jo=jo+as;
+if (ui % 11 !== 0) jo=jo+as;
+if (ty % 11 !== 0) jo=jo+as;
+if (jk % 11 !== 0) jo=jo+as;
+
+console.log(sa);
