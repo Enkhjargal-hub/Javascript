@@ -243,17 +243,69 @@ if (jish4 > 3) {
 
 let too = 4;
 
-if (too!==4) {
-  console.log('Sain');
-}
-if (too!==3) {
-  console.log('Dund');}
 
-if (too!==2) {
+if (too==2) {
   console.log('Muu');}
 
-if (too!==5) {
+if (too==3) {
+  console.log('Dund');}
+
+if (too==4) {
+  console.log('Sain');}
+
+if (too==5) {
   console.log('Onts');}
 
-  console.log(too);
-  
+//  Problem 23 (Dun)
+
+let dun = 93;
+
+if(dun>90 && dun<95) {console.log("-A");
+} else if(dun>85 && dun<90) {
+  console.log("+B");
+}
+
+// Problem 24 (7 honog angliar)
+
+let udur= 5;
+
+if(udur==1) {console.log('Monday');}
+
+if(udur==2) {console.log('Tuesday');}
+
+if(udur==3) {console.log('Wednesday');}
+
+if(udur==4) {console.log('Thursday');}
+
+if(udur==5) {console.log('Friday');}
+
+if(udur==6) {console.log('Saturday');}
+
+if(udur==7) {console.log('Sunday');}
+
+
+// Problem 25 (uliral)
+
+let uliral=1;
+
+if(uliral==1) {console.log("Spring");}
+
+if(uliral==2) {console.log("Summer");}
+
+if(uliral==3) {console.log("Autumn");}
+
+if(uliral==4) {console.log("Winter");}
+
+// Problem 26 (gurvaljin baiguulj boloh eseh)
+
+let a1=3;
+let b1=4;
+let c1=5;
+
+if(a1+b1>c1 && a1+c1>b1 && b1+c1>a1) {
+  console.log("Yes");
+} else (console.log("No"))
+ 
+
+
+
