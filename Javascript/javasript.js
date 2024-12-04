@@ -305,7 +305,40 @@ let c1=5;
 if(a1+b1>c1 && a1+c1>b1 && b1+c1>a1) {
   console.log("Yes");
 } else (console.log("No"))
+
+// Problem 27 (toonii hurd)
+
+let ak=3;
+let hurd=1;
+let hurdurjver=10;
+
+if (ak > 0 && ak <= 10) {
+  for( let i=1; i<=hurdurjver; i++) {
+    console.log('${ak} * ${i} = ${ak*i}');
+  }
+}
+
+// Problem 28 (toonii zereg)
+
+let kl=5;
+let zereg=5;
+
+if(kl > 0 && zereg> 0) {
+  for(let i=1; i <= zereg; i++) {
+    console.log('${kl} * ${i} = ${kl**i}');
+  }
+}
  
+
+// Problem 29 (ilerhiilel A= B*C-D )
+
+let B=2;
+let C=3;
+let D=4;
+
+console.log(B*C-D);
+
+
 
 
 
