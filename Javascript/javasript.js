@@ -184,11 +184,76 @@ let ui = 11;
 let ty = 22;
 let jk = 5;
 
-let jo=1;
+let jo=0;
 
-if (as % 11 !== 0) jo=jo+as;
-if (ui % 11 !== 0) jo=jo+as;
-if (ty % 11 !== 0) jo=jo+as;
-if (jk % 11 !== 0) jo=jo+as;
+if (as % 11 !== 0) jo+=as;
+if (ui % 11 !== 0) jo+=ui;
+if (ty % 11 !== 0) jo+=ty;
+if (jk % 11 !== 0) jo+=jk;
 
-console.log(sa);
+console.log(jo);
+
+// Problem 19 (1-s n toonii niilberiig ol)
+
+// Problem 20 (100-g davtalt ashiglan toon udaa nem)
+
+let hj = [100, 100, 100, 100, 100, 100];
+
+let nemehtoo = 100;
+let hedenudaa = 6;
+let niilber = 0;
+
+for (let i = 0; i < hedenudaa; i++) {
+  niilber = niilber + nemehtoo;
+}
+console.log(niilber);
+
+// Problem 21 (3-s ih bol tentssen busad tohioldold unasan gj uzne)
+
+let jish1 = 2;
+let jish2 = 3;
+let jish3 = 4;
+let jish4 = 5;
+
+if (jish1 > 3) {
+  console.log("tentssen");
+} else {
+  console.log("unasan");
+}
+
+if (jish2 > 3) {
+  console.log("tentssen");
+} else {
+  console.log("unasan");
+}
+
+if (jish3 > 3) {
+  console.log("tentssen");
+} else {
+  console.log("unasan");
+}
+
+if (jish4 > 3) {
+  console.log("tentssen");
+} else {
+  console.log("unasan");
+}
+
+// Problem 22 (toog text bolgoh)
+
+let too = 4;
+
+if (too!==4) {
+  console.log('Sain');
+}
+if (too!==3) {
+  console.log('Dund');}
+
+if (too!==2) {
+  console.log('Muu');}
+
+if (too!==5) {
+  console.log('Onts');}
+
+  console.log(too);
+  
