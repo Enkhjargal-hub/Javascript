@@ -338,6 +338,21 @@ let D=4;
 
 console.log(B*C-D);
 
+// Problem 30 (2 toonii ih)
+
+let ip = 14;
+let yt = 16;
+
+if (ip>yt) {
+ console.log("Их тоо"+ ip);
+} else console.log("Бага тоо"+yt);
+ if(ip<yt) {
+  console.log("Их тоо"+ yt);
+} else console.log("Бага тоо"+ip);
+
+
+
+
 
 
 
