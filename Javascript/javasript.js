@@ -37,7 +37,7 @@ let r = 476;
 
 console.log(r % 10);
 
-// Problem 7 goliin 2-n toog gargah gj bga
+// Problem 7 (goliin 2-n toog gargah gj bga)
 
 let k = 423;
 
@@ -349,6 +349,31 @@ if (ip>yt) {
  if(ip<yt) {
   console.log("Их тоо"+ yt);
 } else console.log("Бага тоо"+ip);
+
+// Problem 31 (tegsh toonuudiin niilber)
+
+let sc = 10;
+let hb = 3;
+let wq = 5;
+
+let gh = 0;
+
+if (sc % 2 == 0) gh = gh +sc;
+
+if (hb % 2 == 0) gh = gh +hb;
+
+if (wq % 2 == 0) gh = gh +wq;
+
+console.log(gh);
+
+// Problem 32 (ogogdson toond neg too davtagdsn too)
+
+let bn = 23453; 
+
+for (let i=0; i<bn.length; i++)  {console.log(i, bn [i]);
+}
+
+
 
 
 
