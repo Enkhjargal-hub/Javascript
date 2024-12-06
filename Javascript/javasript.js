@@ -426,3 +426,25 @@ for (let i=2; i<= Number; i++) {
 
 return result;
 
+
+// Problem 34 ()
+
+let scores = [40, 50, 92, 50, 40];
+let students = [];
+
+for (let i=0; i<scores.length; i++) {
+ for (let j=i+1; j<students.length -1; i++) {
+  if (
+    students[i].score<students[j].score && students[i].id>students[j].id 
+  )
+  {
+    let temp = students [i];
+    students [i]=students [j];
+    students [j]=temp;
+  }
+ }
+}
+
+for(let student of students) {
+  console.log(students.id);
+}
