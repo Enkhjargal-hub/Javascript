@@ -33,9 +33,9 @@ console.log(3 * x - 5);
 
 // Problem 6 suuliin 6-n toog gargah gj bga
 
-let r = 476;
+// let r = 476;
 
-console.log(r % 10);
+// console.log(r % 10);
 
 // Problem 7 (goliin 2-n toog gargah gj bga)
 
@@ -397,54 +397,57 @@ let bn = 23453;
 // bn % 10 => suuliin tsifr
 // bn / 10 => suuliin tsifriig arilgana
 
-// /tsifr too hadgalnaa/ 
-let count = new Array(10).fill(0); 
+// /tsifr too hadgalnaa/
+let count = new Array(10).fill(0);
 
 while (bn > 0) {
- let digit= (bn % 10);
- count[digit]++; 
- bn= Math.floor(bn /= 10);
+  let digit = bn % 10;
+  count[digit]++;
+  bn = Math.floor((bn /= 10));
 }
 
 for (let i = 0; i < 10; i++) {
   if (count[i] > 0) {
-    console.log('${i} : ${count[i]} удаа');
+    console.log("${i} : ${count[i]} удаа");
   }
 }
 
 // Problem 33 (shagai buult magadlal)
 
-let kj= Морь;
-let ws= Тэмээ;
-let sj= Хонь;
-let vb= Ямаа;
+// let kj= Морь;
+// let ws= Тэмээ;
+// let sj= Хонь;
+// let vb= Ямаа;
 
-
-for (let i=2; i<= Number; i++) {
-  result *= i;
-}
-
-return result;
-
-
-// Problem 34 ()
+// Problem 34 (Onoo erembeleh)
 
 let scores = [40, 50, 92, 50, 40];
+// 92 50 50 40 40
 let students = [];
 
-for (let i=0; i<scores.length; i++) {
- for (let j=i+1; j<students.length -1; i++) {
-  if (
-    students[i].score<students[j].score && students[i].id>students[j].id 
-  )
-  {
-    let temp = students [i];
-    students [i]=students [j];
-    students [j]=temp;
-  }
- }
+for (let i = 0; i < scores.length; i++) {
+  students.push({ score: scores[i], id: i + 1 });
 }
 
-for(let student of students) {
-  console.log(students.id);
+console.log(students);
+
+// buble sort
+for (let i = 0; i < students.length; i++) {
+  for (let j = i + 1; j < students.length - 1; j++) {
+    console.log(students[i], i);
+    if (
+      students[i].score < students[j].score &&
+      students[i].id > students[j].id
+    ) {
+      let temp = students[i];
+      students[i] = students[j];
+      students[j] = temp;
+    }
+  }
 }
+
+console.log(students);
+
+// for (let student of students) {
+//   console.log(students.id);
+// }
