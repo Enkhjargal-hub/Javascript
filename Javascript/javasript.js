@@ -419,7 +419,10 @@ let ws= Тэмээ;
 let sj= Хонь;
 let vb= Ямаа;
 
-if(kj>ws) {
+
+for (let i=2; i<= Number; i++) {
+  result *= i;
 }
 
+return result;
 
