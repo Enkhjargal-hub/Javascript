@@ -452,15 +452,29 @@ console.log(students);
 //   console.log(students.id);
 // }
 
-// Problem 34 (ugiig useg bureer ni salgan bicheed hemjeeg ni tom, jijig)
+//  (ugiig useg bureer ni salgan bicheed hemjeeg ni tom, jijig)
 
-let word= "Rose";
+let string= "Rose";
 
-// Zai avah
+function Wordi(word) {
+
 let spacedWord= word.split("").join("");
 
-// Tom usgeer bichih
-let UpperCaseWord= word.toUpperCase();
+let UpperCaseWord= word.toUpperCase().split("").join(" ")
 
-// Jijig usgeer bichih
-let lowerCaseWord=word.toLowerCase();
+let lowerCaseWord=word.toLowerCase().split("").join(" ")
+
+return {
+  spacedWord,
+  UpperCaseWord,
+  lowerCaseWord
+};
+}
+
+let result=Wordi(string);
+
+ console.log(result.spacedWord);
+ 
+ console.log(result.UpperCaseWord);
+
+ console.log(result.lowerCaseWord);
