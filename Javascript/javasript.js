@@ -392,25 +392,30 @@ console.log(gh);
 
 // Problem 32 (ogogdson toond neg too davtagdsn too)
 
-let bn = 23453;
+// let bn = 23453;
 
 // bn % 10 => suuliin tsifr
 // bn / 10 => suuliin tsifriig arilgana
 
 // /tsifr too hadgalnaa/
-let count = new Array(10).fill(0);
 
-while (bn > 0) {
-  let digit = bn % 10;
-  count[digit]++;
-  bn = Math.floor((bn /= 10));
-}
+function bodlogo32(bn) {
+  let count = new Array(10).fill(0);
 
-for (let i = 0; i < 10; i++) {
-  if (count[i] > 0) {
-    console.log("${i} : ${count[i]} удаа");
+  while (bn > 0) {
+    let digit = bn % 10;
+    count[digit]++;
+    bn = Math.floor((bn /= 10));
+  }
+
+  for (let i = 0; i < 10; i++) {
+    if (count[i] > 0) {
+      return `${i} : ${count[i]} удаа`;
+    }
   }
 }
+
+console.log(bodlogo32(23453));
 
 // Problem 33 (shagai buult magadlal)
 
@@ -421,32 +426,34 @@ for (let i = 0; i < 10; i++) {
 
 // Problem 34 (Onoo erembeleh)
 
-let scores = [40, 50, 92, 50, 40];
-// 92 50 50 40 40
-let students = [];
+function bodlogo34(scores) {
+  let students = [];
 
-for (let i = 0; i < scores.length; i++) {
-  students.push({ score: scores[i], id: i + 1 });
-}
+  for (let i = 0; i < scores.length; i++) {
+    students.push({ score: scores[i], id: i + 1 });
+  }
 
-console.log(students);
-
-// buble sort
-for (let i = 0; i < students.length; i++) {
-  for (let j = i + 1; j < students.length - 1; j++) {
-    console.log(students[i], i);
-    if (
-      students[i].score < students[j].score &&
-      students[i].id > students[j].id
-    ) {
-      let temp = students[i];
-      students[i] = students[j];
-      students[j] = temp;
+  // buble sort
+  for (let i = 0; i < students.length; i++) {
+    for (let j = i + 1; j < students.length - 1; j++) {
+      if (
+        students[i].score < students[j].score &&
+        students[i].id > students[j].id
+      ) {
+        let temp = students[i];
+        students[i] = students[j];
+        students[j] = temp;
+      }
     }
   }
+
+  return students;
 }
 
-console.log(students);
+console.log(bodlogo34([40, 50, 92, 50, 40]));
+
+// let scores = [40, 50, 92, 50, 40];
+// 92 50 50 40 40
 
 // for (let student of students) {
 //   console.log(students.id);
@@ -454,27 +461,26 @@ console.log(students);
 
 //  (ugiig useg bureer ni salgan bicheed hemjeeg ni tom, jijig)
 
-let string= "Rose";
+let string = "Rose";
 
 function Wordi(word) {
+  let spacedWord = word.split("").join("");
 
-let spacedWord= word.split("").join("");
+  let UpperCaseWord = word.toUpperCase().split("").join(" ");
 
-let UpperCaseWord= word.toUpperCase().split("").join(" ")
+  let lowerCaseWord = word.toLowerCase().split("").join(" ");
 
-let lowerCaseWord=word.toLowerCase().split("").join(" ")
-
-return {
-  spacedWord,
-  UpperCaseWord,
-  lowerCaseWord
-};
+  return {
+    spacedWord,
+    UpperCaseWord,
+    lowerCaseWord,
+  };
 }
 
-let result=Wordi(string);
+let result = Wordi(string);
 
- console.log(result.spacedWord);
- 
- console.log(result.UpperCaseWord);
+console.log(result.spacedWord);
 
- console.log(result.lowerCaseWord);
+console.log(result.UpperCaseWord);
+
+console.log(result.lowerCaseWord);
