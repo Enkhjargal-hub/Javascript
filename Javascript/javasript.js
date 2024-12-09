@@ -451,3 +451,16 @@ console.log(students);
 // for (let student of students) {
 //   console.log(students.id);
 // }
+
+// Problem 34 (ugiig useg bureer ni salgan bicheed hemjeeg ni tom, jijig)
+
+let word= "Rose";
+
+// Zai avah
+let spacedWord= word.split("").join("");
+
+// Tom usgeer bichih
+let UpperCaseWord= word.toUpperCase();
+
+// Jijig usgeer bichih
+let lowerCaseWord=word.toLowerCase();
