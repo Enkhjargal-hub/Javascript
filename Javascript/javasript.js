@@ -345,20 +345,18 @@ if (ak > 0 && ak <= 10) {
 
 // Problem 28 (toonii zereg)
 
-
-function bodlogo28(kl,zereg) {
+function bodlogo28(kl, zereg) {
   if (kl > 0 && zereg > 0) {
     for (let i = 1; i <= zereg; i++) {
       console.log("${kl} * ${i} = ${kl**i}");
     }
   }
-  return(5**5)
+  return 5 ** 5;
 }
 
-console.log(bodlogo28(5,5));
+console.log(bodlogo28(5, 5));
 
-
-// Problem 29 (ilerhiilel A= B*C-D )
+// Problem 29 (ilerhiilel A= B*C-D)
 
 let B = 2;
 let C = 3;
@@ -368,8 +366,7 @@ console.log(B * C - D);
 
 // Problem 30 (2 toonii ih)
 
-
-function bodlogo30(ip,yt) {
+function bodlogo30(ip, yt) {
   if (ip > yt) {
     console.log("Их тоо" + ip);
   } else console.log("Бага тоо" + yt);
@@ -377,16 +374,12 @@ function bodlogo30(ip,yt) {
     console.log("Их тоо" + yt);
   } else console.log("Бага тоо" + ip);
 
-  return(ip,yt)
+  return ip, yt;
 }
 
-console.log(bodlogo30(14,16));
-
-
-
+console.log(bodlogo30(14, 16));
 
 // Problem 31 (tegsh toonuudiin niilber)
-
 
 function bodlogo31(sc, hb, wq, gh) {
   if (sc % 2 == 0) gh = gh + sc;
@@ -395,11 +388,10 @@ function bodlogo31(sc, hb, wq, gh) {
 
   if (wq % 2 == 0) gh = gh + wq;
 
-  return (gh);
+  return gh;
 }
 
-console.log(bodlogo31(10,3,5,0));
-
+console.log(bodlogo31(10, 3, 5, 0));
 
 // Problem 32 (ogogdson toond neg too davtagdsn too)
 
@@ -470,7 +462,7 @@ console.log(bodlogo34([40, 50, 92, 50, 40]));
 //   console.log(students.id);
 // }
 
-//  (ugiig useg bureer ni salgan bicheed hemjeeg ni tom, jijig)
+// Problem 35  (ugiig useg bureer ni salgan bicheed hemjeeg ni tom, jijig)
 
 let string = "Rose";
 
@@ -495,3 +487,16 @@ console.log(result.spacedWord);
 console.log(result.UpperCaseWord);
 
 console.log(result.lowerCaseWord);
+
+// Problem 36 (tegsh too sondgoi toonuudaasaa ih bol Yes, ugui bol No)
+
+function bodlogo36(arr) {
+  const sondgoi = arr.filter((num) => num % 2 !== 0).length;
+  const tegsh = arr.length - sondgoi;
+
+  return sondgoi > tegsh ? "Yes" : "No";
+}
+
+console.log(bodlogo36([5, 7, 15, 6, 13, 2,2,2,2,2]));
+
+
