@@ -345,14 +345,18 @@ if (ak > 0 && ak <= 10) {
 
 // Problem 28 (toonii zereg)
 
-let kl = 5;
-let zereg = 5;
 
-if (kl > 0 && zereg > 0) {
-  for (let i = 1; i <= zereg; i++) {
-    console.log("${kl} * ${i} = ${kl**i}");
+function bodlogo28(kl,zereg) {
+  if (kl > 0 && zereg > 0) {
+    for (let i = 1; i <= zereg; i++) {
+      console.log("${kl} * ${i} = ${kl**i}");
+    }
   }
+  return(5**5)
 }
+
+console.log(bodlogo28(5,5));
+
 
 // Problem 29 (ilerhiilel A= B*C-D )
 
@@ -364,31 +368,38 @@ console.log(B * C - D);
 
 // Problem 30 (2 toonii ih)
 
-let ip = 14;
-let yt = 16;
 
-if (ip > yt) {
-  console.log("Их тоо" + ip);
-} else console.log("Бага тоо" + yt);
-if (ip < yt) {
-  console.log("Их тоо" + yt);
-} else console.log("Бага тоо" + ip);
+function bodlogo30(ip,yt) {
+  if (ip > yt) {
+    console.log("Их тоо" + ip);
+  } else console.log("Бага тоо" + yt);
+  if (ip < yt) {
+    console.log("Их тоо" + yt);
+  } else console.log("Бага тоо" + ip);
+
+  return(ip,yt)
+}
+
+console.log(bodlogo30(14,16));
+
+
+
 
 // Problem 31 (tegsh toonuudiin niilber)
 
-let sc = 10;
-let hb = 3;
-let wq = 5;
 
-let gh = 0;
+function bodlogo31(sc, hb, wq, gh) {
+  if (sc % 2 == 0) gh = gh + sc;
 
-if (sc % 2 == 0) gh = gh + sc;
+  if (hb % 2 == 0) gh = gh + hb;
 
-if (hb % 2 == 0) gh = gh + hb;
+  if (wq % 2 == 0) gh = gh + wq;
 
-if (wq % 2 == 0) gh = gh + wq;
+  return (gh);
+}
 
-console.log(gh);
+console.log(bodlogo31(10,3,5,0));
+
 
 // Problem 32 (ogogdson toond neg too davtagdsn too)
 
