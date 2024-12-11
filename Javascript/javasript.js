@@ -500,3 +500,18 @@ function bodlogo36(arr) {
 console.log(bodlogo36([5, 7, 15, 6, 13, 2,2,2,2,2]));
 
 
+// mail ovog ner 
+
+let email= "bat.khat@gmail.com"    // Kh.Bat
+
+function fullname(name) {
+ let nl = name.split("@")[0];
+ let bnc = username.split(" ");
+ formattedName = formatName(nameParts[1], nameParts[0]);
+ console.log(formatName);
+ 
+ console.log(firstChar);
+
+ return ;
+}
+
