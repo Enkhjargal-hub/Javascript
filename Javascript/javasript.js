@@ -544,4 +544,6 @@ function fullname(email) {
 
 console.log(fullname(email));
 
+// dahiad neg mail neg ner salgah
+
 
