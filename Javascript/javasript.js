@@ -499,19 +499,51 @@ function bodlogo36(arr) {
 
 console.log(bodlogo36([5, 7, 15, 6, 13, 2,2,2,2,2]));
 
+// ovog ner huvirgah
 
-// mail ovog ner 
+let totalname="Bold Bat"; // B.Bat
 
-let email= "bat.khat@gmail.com"    // Kh.Bat
+function huv (name) {
+  let firstName = name.split(" ")[1];
+  let lastName = name.split(" ") [0];
 
-function fullname(name) {
- let nl = name.split("@")[0];
- let bnc = username.split(" ");
- formattedName = formatName(nameParts[1], nameParts[0]);
- console.log(formatName);
- 
- console.log(firstChar);
+  console.log(lastName);
 
- return ;
+  let firstChar = lastName[0];
+  console.log(firstChar);
+  
+  return firstChar + ". " + firstName;
 }
+
+console.log(huv(totalname));
+
+
+
+// mail ovog ner  // Kh.Bat
+
+let email = "bat.kh@gmail.com";
+function formatNamee(firstName, lastName) {
+  let name = lastName[0].toUpperCase() + lastName.slice(1) + ". " +
+  firstName[0].toUpperCase() + firstName.slice(1);
+  return name
+}
+
+function fullname(email) {
+  
+  let username = email.split("@")[0];
+  let nameParts = username.split(".");
+  
+  
+  if (nameParts.length === 2) {
+    console.log(nameParts[1]);
+    
+    let formatName = formatNamee(nameParts[0], nameParts[1]);
+    return formatName;
+  } else {
+    return "тохирох формат байхгүй байна.";
+  }
+}
+
+console.log(fullname(email));
+
 
