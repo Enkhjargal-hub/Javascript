@@ -522,6 +522,7 @@ console.log(huv(totalname));
 // mail ovog ner  // Kh.Bat
 
 let email = "bat.kh@gmail.com";
+
 function formatNamee(firstName, lastName) {
   let name = lastName[0].toUpperCase() + lastName.slice(1) + ". " +
   firstName[0].toUpperCase() + firstName.slice(1);
@@ -533,10 +534,7 @@ function fullname(email) {
   let username = email.split("@")[0];
   let nameParts = username.split(".");
   
-  
   if (nameParts.length === 2) {
-    console.log(nameParts[1]);
-    
     let formatName = formatNamee(nameParts[0], nameParts[1]);
     return formatName;
   } else {
