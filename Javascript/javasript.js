@@ -547,6 +547,7 @@ console.log(fullname(email));
 
 // dahiad neg mail neg ner salgah
 
+// Dom
 function printHello() {
   const username = document.querySelector("#username").value;
   const password = document.querySelector("#password").value;
