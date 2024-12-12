@@ -497,43 +497,44 @@ function bodlogo36(arr) {
   return sondgoi > tegsh ? "Yes" : "No";
 }
 
-console.log(bodlogo36([5, 7, 15, 6, 13, 2,2,2,2,2]));
+console.log(bodlogo36([5, 7, 15, 6, 13, 2, 2, 2, 2, 2]));
 
 // ovog ner huvirgah
 
-let totalname="Bold Bat"; // B.Bat
+let totalname = "Bold Bat"; // B.Bat
 
-function huv (name) {
+function huv(name) {
   let firstName = name.split(" ")[1];
-  let lastName = name.split(" ") [0];
+  let lastName = name.split(" ")[0];
 
   console.log(lastName);
 
   let firstChar = lastName[0];
   console.log(firstChar);
-  
+
   return firstChar + ". " + firstName;
 }
 
 console.log(huv(totalname));
-
-
 
 // mail ovog ner  // Kh.Bat
 
 let email = "bat.kh@gmail.com";
 
 function formatNamee(firstName, lastName) {
-  let name = lastName[0].toUpperCase() + lastName.slice(1) + ". " +
-  firstName[0].toUpperCase() + firstName.slice(1);
-  return name
+  let name =
+    lastName[0].toUpperCase() +
+    lastName.slice(1) +
+    ". " +
+    firstName[0].toUpperCase() +
+    firstName.slice(1);
+  return name;
 }
 
 function fullname(email) {
-  
   let username = email.split("@")[0];
   let nameParts = username.split(".");
-  
+
   if (nameParts.length === 2) {
     let formatName = formatNamee(nameParts[0], nameParts[1]);
     return formatName;
@@ -546,4 +547,37 @@ console.log(fullname(email));
 
 // dahiad neg mail neg ner salgah
 
+function printHello() {
+  const username = document.querySelector("#username").value;
+  const password = document.querySelector("#password").value;
 
+  const containerElement = document.createElement("div");
+  const WelcomeElement = document.createElement("p");
+  const usernameElement = document.createElement("p");
+  const passwordElement = document.createElement("p");
+
+  
+  if (username.length !== 0, password.length !== 0) {
+    WelcomeElement.innerText = "Welcome to our web site, you will enjoy it!!";
+  }
+
+  if (username.length !== 0) {
+    usernameElement.innerText = "Your username is: " + username;
+  } else {
+    usernameElement.innerText = "Please fill in your username!!";
+    usernameElement.style.color = "red";
+  }
+
+  if (password.length !== 0) {
+    passwordElement.innerText = "Your password is: " + password;
+  } else {
+    passwordElement.innerText = "Please fill in your password!!";
+    passwordElement.style.color = "red";
+  }
+
+  containerElement.appendChild(WelcomeElement);
+  containerElement.appendChild(usernameElement);
+  containerElement.appendChild(passwordElement);
+
+  document.body.appendChild(containerElement);
+}
